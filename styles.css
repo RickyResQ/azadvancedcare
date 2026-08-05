@@ -674,7 +674,7 @@ h3 {
     background-size: contain;
     background-position: center right;
     pointer-events: none;
-    opacity: 0.85;
+    opacity: 1;
 }
 
 /* Subtle warm gradient at bottom of hero */
@@ -693,7 +693,7 @@ h3 {
     .hero::before {
         width: 90%;
         right: -15%;
-        opacity: 0.55;
+        opacity: 0.75;
     }
 }
 

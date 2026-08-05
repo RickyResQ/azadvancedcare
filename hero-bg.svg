@@ -1,34 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" fill="none">
   <!-- Flowing organic curves — desert wind / water-worn stone -->
-  <path d="M-20 680 C150 500 280 520 400 460 C520 400 580 350 700 320 C820 290 880 200 950 180" stroke="#2C5F6E" stroke-width="2.5" opacity="0.45" stroke-linecap="round"/>
-  <path d="M-20 700 C180 540 300 530 430 480 C560 430 620 370 720 340 C820 310 870 240 950 220" stroke="#2C5F6E" stroke-width="2" opacity="0.38" stroke-linecap="round"/>
-  <path d="M-20 720 C200 580 340 550 460 510 C580 470 650 400 740 370 C830 340 880 280 950 260" stroke="#2C5F6E" stroke-width="1.8" opacity="0.32" stroke-linecap="round"/>
-  <path d="M30 730 C230 600 370 570 490 540 C610 510 670 440 760 410 C850 380 900 320 960 300" stroke="#2C5F6E" stroke-width="1.5" opacity="0.26" stroke-linecap="round"/>
-  <path d="M80 740 C260 620 400 590 510 560 C620 530 690 480 780 450 C870 420 920 360 970 340" stroke="#2C5F6E" stroke-width="1.2" opacity="0.2" stroke-linecap="round"/>
-  <path d="M130 750 C290 640 420 610 530 580 C640 550 710 510 800 480 C890 450 930 400 970 380" stroke="#2C5F6E" stroke-width="1" opacity="0.16" stroke-linecap="round"/>
+  <path d="M-20 680 C150 500 280 520 400 460 C520 400 580 350 700 320 C820 290 880 200 950 180" stroke="#2C5F6E" stroke-width="7" opacity="0.45" stroke-linecap="round"/>
+  <path d="M-20 700 C180 540 300 530 430 480 C560 430 620 370 720 340 C820 310 870 240 950 220" stroke="#2C5F6E" stroke-width="6" opacity="0.38" stroke-linecap="round"/>
+  <path d="M-20 720 C200 580 340 550 460 510 C580 470 650 400 740 370 C830 340 880 280 950 260" stroke="#2C5F6E" stroke-width="5" opacity="0.32" stroke-linecap="round"/>
+  <path d="M30 730 C230 600 370 570 490 540 C610 510 670 440 760 410 C850 380 900 320 960 300" stroke="#2C5F6E" stroke-width="4.5" opacity="0.26" stroke-linecap="round"/>
+  <path d="M80 740 C260 620 400 590 510 560 C620 530 690 480 780 450 C870 420 920 360 970 340" stroke="#2C5F6E" stroke-width="3.5" opacity="0.2" stroke-linecap="round"/>
+  <path d="M130 750 C290 640 420 610 530 580 C640 550 710 510 800 480 C890 450 930 400 970 380" stroke="#2C5F6E" stroke-width="3" opacity="0.16" stroke-linecap="round"/>
 
   <!-- Organic blob forms — like worn river stones -->
-  <ellipse cx="720" cy="160" rx="70" ry="55" stroke="#2C5F6E" stroke-width="1.5" opacity="0.28" transform="rotate(-12 720 160)"/>
-  <ellipse cx="720" cy="160" rx="110" ry="85" stroke="#2C5F6E" stroke-width="1.2" opacity="0.22" transform="rotate(-12 720 160)"/>
-  <ellipse cx="720" cy="160" rx="160" ry="120" stroke="#2C5F6E" stroke-width="1" opacity="0.16" transform="rotate(-12 720 160)"/>
-  <ellipse cx="720" cy="160" rx="220" ry="165" stroke="#2C5F6E" stroke-width="0.8" opacity="0.1" transform="rotate(-12 720 160)"/>
+  <ellipse cx="720" cy="160" rx="70" ry="55" stroke="#2C5F6E" stroke-width="4.5" opacity="0.28" transform="rotate(-12 720 160)"/>
+  <ellipse cx="720" cy="160" rx="110" ry="85" stroke="#2C5F6E" stroke-width="3.5" opacity="0.22" transform="rotate(-12 720 160)"/>
+  <ellipse cx="720" cy="160" rx="160" ry="120" stroke="#2C5F6E" stroke-width="3" opacity="0.16" transform="rotate(-12 720 160)"/>
+  <ellipse cx="720" cy="160" rx="220" ry="165" stroke="#2C5F6E" stroke-width="2.5" opacity="0.1" transform="rotate(-12 720 160)"/>
 
   <!-- Smaller organic cluster — mid right -->
-  <ellipse cx="810" cy="380" rx="35" ry="28" stroke="#2C5F6E" stroke-width="1.2" opacity="0.24" transform="rotate(8 810 380)"/>
-  <ellipse cx="810" cy="380" rx="60" ry="45" stroke="#2C5F6E" stroke-width="1" opacity="0.18" transform="rotate(8 810 380)"/>
-  <ellipse cx="810" cy="380" rx="90" ry="65" stroke="#2C5F6E" stroke-width="0.8" opacity="0.12" transform="rotate(8 810 380)"/>
+  <ellipse cx="810" cy="380" rx="35" ry="28" stroke="#2C5F6E" stroke-width="3.5" opacity="0.24" transform="rotate(8 810 380)"/>
+  <ellipse cx="810" cy="380" rx="60" ry="45" stroke="#2C5F6E" stroke-width="3" opacity="0.18" transform="rotate(8 810 380)"/>
+  <ellipse cx="810" cy="380" rx="90" ry="65" stroke="#2C5F6E" stroke-width="2.5" opacity="0.12" transform="rotate(8 810 380)"/>
 
   <!-- Gentle organic arcs — like wind patterns -->
-  <path d="M500 50 C580 80 650 60 750 90 C850 120 880 80 950 100" stroke="#2C5F6E" stroke-width="1.2" opacity="0.2" stroke-linecap="round"/>
-  <path d="M550 30 C620 55 680 40 770 65 C860 90 890 60 950 75" stroke="#2C5F6E" stroke-width="1" opacity="0.16" stroke-linecap="round"/>
+  <path d="M500 50 C580 80 650 60 750 90 C850 120 880 80 950 100" stroke="#2C5F6E" stroke-width="3.5" opacity="0.2" stroke-linecap="round"/>
+  <path d="M550 30 C620 55 680 40 770 65 C860 90 890 60 950 75" stroke="#2C5F6E" stroke-width="3" opacity="0.16" stroke-linecap="round"/>
 
   <!-- Scattered organic dots — like desert pebbles -->
-  <circle cx="780" cy="100" r="4" fill="#2C5F6E" opacity="0.3"/>
-  <circle cx="820" cy="130" r="3.5" fill="#2C5F6E" opacity="0.25"/>
-  <circle cx="750" cy="140" r="3" fill="#2C5F6E" opacity="0.22"/>
-  <circle cx="850" cy="90" r="2.5" fill="#2C5F6E" opacity="0.2"/>
-  <circle cx="690" cy="120" r="2" fill="#2C5F6E" opacity="0.18"/>
-  <circle cx="830" cy="200" r="3" fill="#2C5F6E" opacity="0.2"/>
-  <circle cx="770" cy="250" r="2.5" fill="#2C5F6E" opacity="0.16"/>
-  <circle cx="860" cy="310" r="3" fill="#2C5F6E" opacity="0.18"/>
+  <circle cx="780" cy="100" r="6" fill="#2C5F6E" opacity="0.3"/>
+  <circle cx="820" cy="130" r="5" fill="#2C5F6E" opacity="0.25"/>
+  <circle cx="750" cy="140" r="4.5" fill="#2C5F6E" opacity="0.22"/>
+  <circle cx="850" cy="90" r="4" fill="#2C5F6E" opacity="0.2"/>
+  <circle cx="690" cy="120" r="3.5" fill="#2C5F6E" opacity="0.18"/>
+  <circle cx="830" cy="200" r="5" fill="#2C5F6E" opacity="0.2"/>
+  <circle cx="770" cy="250" r="4" fill="#2C5F6E" opacity="0.16"/>
+  <circle cx="860" cy="310" r="5" fill="#2C5F6E" opacity="0.18"/>
 </svg>

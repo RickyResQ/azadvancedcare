@@ -5,18 +5,21 @@
 
 /* --- Custom Properties --- */
 :root {
-    --color-bg: #FAF9F6;
+    --color-bg: #F9F6F1;
     --color-surface: #FFFFFF;
-    --color-warm: #F3F0EB;
-    --color-hero: #EDEAE4;
-    --color-text: #171614;
-    --color-text-muted: #635E56;
-    --color-accent: #2C5F6E;
-    --color-accent-hover: #1D4856;
-    --color-accent-light: #E6F0F3;
-    --color-accent-subtle: #F3F8F9;
-    --color-border: #E0DDD7;
-    --color-border-light: #ECEAE5;
+    --color-warm: #F0ECE4;
+    --color-hero: #EBE7DF;
+    --color-text: #1C2B3A;
+    --color-text-muted: #4F5E6F;
+    --color-accent: #3D7A5F;
+    --color-accent-hover: #2E6349;
+    --color-accent-light: #E6F0EA;
+    --color-accent-subtle: #F2F7F4;
+    --color-cta: #B5563A;
+    --color-cta-hover: #994A32;
+    --color-cta-light: #FAEEE9;
+    --color-border: #DDD9D1;
+    --color-border-light: #E9E5DD;
     --color-crisis-bg: #FDF5EC;
     --color-crisis-border: #E5C69C;
     --color-crisis-text: #6B3E14;
@@ -235,7 +238,7 @@ h3 {
 }
 
 .btn:focus-visible {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--color-cta);
     outline-offset: 3px;
 }
 
@@ -244,15 +247,15 @@ h3 {
 }
 
 .btn-primary {
-    background-color: var(--color-accent);
+    background-color: var(--color-cta);
     color: #fff;
-    box-shadow: 0 2px 8px rgba(44, 95, 110, 0.2), var(--shadow-inner-highlight);
+    box-shadow: 0 2px 8px rgba(181, 86, 58, 0.22), var(--shadow-inner-highlight);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-accent-hover);
+    background-color: var(--color-cta-hover);
     color: #fff;
-    box-shadow: 0 4px 16px rgba(44, 95, 110, 0.25);
+    box-shadow: 0 4px 16px rgba(181, 86, 58, 0.28);
 }
 
 .btn-arrow {
@@ -721,7 +724,7 @@ h3 {
     border: none;
     height: 3px;
     width: 56px;
-    background-color: var(--color-accent);
+    background: linear-gradient(to right, var(--color-cta), var(--color-accent));
     margin: 28px 0;
     border-radius: 2px;
 }
@@ -1098,7 +1101,7 @@ h3 {
 
 .faq-item[open] summary::after {
     content: "\2212";
-    background-color: var(--color-accent);
+    background-color: var(--color-cta);
     color: #fff;
 }
 
@@ -1198,7 +1201,7 @@ h3 {
 .form-group input:focus {
     outline: none;
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 4px rgba(44, 95, 110, 0.1);
+    box-shadow: 0 0 0 4px rgba(61, 122, 95, 0.1);
     background-color: var(--color-surface);
 }
 

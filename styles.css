@@ -658,6 +658,23 @@ h3 {
     padding-top: 72px;
     padding-bottom: 80px;
     position: relative;
+    overflow: hidden;
+}
+
+/* Abstract SVG background — right-aligned, fades out */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 70%;
+    height: 120%;
+    background-image: url('hero-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    pointer-events: none;
+    opacity: 0.55;
 }
 
 /* Subtle warm gradient at bottom of hero */
@@ -670,6 +687,14 @@ h3 {
     height: 120px;
     background: linear-gradient(to bottom, transparent, var(--color-bg));
     pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .hero::before {
+        width: 90%;
+        right: -15%;
+        opacity: 0.35;
+    }
 }
 
 @media (min-width: 768px) {

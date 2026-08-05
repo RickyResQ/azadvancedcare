@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" fill="none">
+  <!-- Abstract layered arcs — mesa/horizon inspired -->
+  <path d="M-50 700 Q200 350 500 400 Q800 450 950 250" stroke="#2C5F6E" stroke-width="1.2" opacity="0.12"/>
+  <path d="M-50 700 Q250 380 520 420 Q780 460 950 300" stroke="#2C5F6E" stroke-width="1" opacity="0.09"/>
+  <path d="M-50 700 Q300 410 540 440 Q760 470 950 350" stroke="#2C5F6E" stroke-width="0.8" opacity="0.07"/>
+  <path d="M-50 700 Q350 440 560 460 Q740 480 950 400" stroke="#2C5F6E" stroke-width="0.8" opacity="0.06"/>
+  <path d="M-50 700 Q400 470 580 480 Q720 490 950 450" stroke="#2C5F6E" stroke-width="0.6" opacity="0.05"/>
+
+  <!-- Concentric arc cluster — upper right -->
+  <circle cx="750" cy="180" r="60" stroke="#2C5F6E" stroke-width="0.7" opacity="0.08"/>
+  <circle cx="750" cy="180" r="100" stroke="#2C5F6E" stroke-width="0.6" opacity="0.06"/>
+  <circle cx="750" cy="180" r="150" stroke="#2C5F6E" stroke-width="0.5" opacity="0.05"/>
+  <circle cx="750" cy="180" r="210" stroke="#2C5F6E" stroke-width="0.4" opacity="0.04"/>
+  <circle cx="750" cy="180" r="280" stroke="#2C5F6E" stroke-width="0.3" opacity="0.03"/>
+
+  <!-- Soft diagonal lines — architectural rhythm -->
+  <line x1="600" y1="0" x2="900" y2="500" stroke="#2C5F6E" stroke-width="0.5" opacity="0.04"/>
+  <line x1="650" y1="0" x2="950" y2="500" stroke="#2C5F6E" stroke-width="0.5" opacity="0.03"/>
+  <line x1="700" y1="0" x2="950" y2="420" stroke="#2C5F6E" stroke-width="0.4" opacity="0.03"/>
+
+  <!-- Small dot cluster -->
+  <circle cx="820" cy="120" r="2" fill="#2C5F6E" opacity="0.1"/>
+  <circle cx="840" cy="140" r="1.5" fill="#2C5F6E" opacity="0.08"/>
+  <circle cx="800" cy="150" r="1.5" fill="#2C5F6E" opacity="0.08"/>
+  <circle cx="860" cy="110" r="1" fill="#2C5F6E" opacity="0.06"/>
+</svg>

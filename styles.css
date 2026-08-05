@@ -1421,18 +1421,82 @@ h3 {
 
 /* --- Page Load Animation (hero only) --- */
 .hero-content {
-    animation: hero-fade-in 0.7s var(--ease-smooth) both;
+    animation: hero-fade-in 0.8s var(--ease-smooth) both;
 }
 
 @keyframes hero-fade-in {
     from {
         opacity: 0;
-        transform: translateY(16px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* --- Scroll Reveal (JS-enhanced) --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s var(--ease-smooth), transform 0.7s var(--ease-smooth);
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Card Hover Lift --- */
+.condition-card,
+.step,
+.option-card,
+.insurance-card {
+    transition: transform 0.35s var(--ease-smooth), box-shadow 0.35s var(--ease-smooth);
+}
+
+.condition-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-elevated), var(--shadow-inner-highlight);
+}
+
+.step:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-elevated);
+}
+
+.option-card:hover,
+.insurance-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-elevated), var(--shadow-inner-highlight);
+}
+
+/* --- FAQ Smooth Open/Close --- */
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s var(--ease-smooth);
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.faq-item[open] .faq-answer {
+    grid-template-rows: 1fr;
+    padding-bottom: 28px;
+}
+
+.faq-answer > p {
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Summary indicator rotation */
+.faq-item summary::after {
+    transition: background-color 0.25s var(--ease-out), color 0.25s var(--ease-out), transform 0.3s var(--ease-smooth);
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(90deg);
 }
 
 /* --- Reduced Motion --- */
@@ -1454,6 +1518,30 @@ h3 {
         animation: none;
         opacity: 1;
         transform: none;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .condition-card,
+    .step,
+    .option-card,
+    .insurance-card {
+        transition: none;
+    }
+
+    .condition-card:hover,
+    .step:hover,
+    .option-card:hover,
+    .insurance-card:hover {
+        transform: none;
+    }
+
+    .faq-answer {
+        transition: none;
     }
 
     .js .nav-menu a {

@@ -1,0 +1,16 @@
+# Publish only the approved website assets.
+*
+!index.html
+!carrie.html
+!privacy-policy.html
+!notice-of-privacy-practices.html
+!styles.css
+!carrie.css
+!script.js
+!hero-bg.svg
+!robots.txt
+!sitemap.xml
+!images/
+images/*
+!images/carrie-bann-320.jpg
+!images/carrie-bann-640.jpg

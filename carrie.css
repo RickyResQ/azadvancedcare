@@ -1,0 +1,58 @@
+.provider-header { background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+.provider-header .container { display:flex; justify-content:space-between; align-items:center; gap:24px; padding-top:24px; padding-bottom:24px; }
+.provider-header .logo { max-width:340px; }
+.provider-back { font-size:14px; white-space:nowrap; }
+.provider-main { max-width:880px; padding-top:64px; }
+.provider-intro { padding-bottom:48px; }
+.provider-intro h1 { margin-top:20px; }
+.provider-title { margin-top:12px; font-size:24px; color:var(--color-accent); font-weight:600; }
+.provider-description { margin-top:12px; color:var(--color-text-muted); }
+.provider-intro .btn { margin-top:28px; gap:16px; }
+.booking-note { margin-top:14px; font-size:14px; color:var(--color-text-muted); line-height:1.6; }
+.provider-section { border-top:1px solid var(--color-border); padding:32px 0; }
+.provider-section h2, .provider-booking h2 { font-size:28px; margin-bottom:20px; }
+.provider-section p { line-height:1.75; margin-top:14px; }
+.provider-section details { border-top:1px solid var(--color-border-light); margin-top:24px; padding-top:18px; }
+.provider-section summary { cursor:pointer; font-weight:600; min-height:44px; }
+.provider-facts { display:grid; grid-template-columns:1fr 1fr; gap:24px 40px; }
+.provider-facts dt { font-weight:700; margin-bottom:6px; }
+.provider-facts dd { color:var(--color-text-muted); line-height:1.65; }
+.provider-facts address { font-style:normal; }
+.provider-booking { background:var(--color-accent-light); border-radius:20px; padding:32px; margin:16px 0 48px; }
+.provider-booking .btn { gap:16px; }
+.provider-footer { max-width:880px; padding-bottom:32px; font-size:14px; color:var(--color-text-muted); }
+.provider-footer p+p { margin-top:12px; }
+@media(max-width:600px) { .provider-header .container { align-items:flex-start; gap:16px; } .provider-header .logo { font-size:16px; } .provider-back { font-size:12px; } .provider-main { padding-top:40px; } .provider-facts { grid-template-columns:1fr; } .provider-title { font-size:21px; } .provider-booking { padding:24px; } .provider-page .btn-lg { width:100%; font-size:15px; justify-content:space-between; } }
+
+.provider-intro { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 32px; align-items: center; }
+.provider-intro .btn { font-size: 15px; padding: 18px 22px; }
+@media (max-width: 767px) { .provider-intro { grid-template-columns: 1fr; gap: 24px; } .provider-intro .carrie-portrait { width: 240px; } }
+
+.provider-section summary:focus-visible { outline: 3px solid var(--color-text); outline-offset: 4px; }
+.provider-main, .provider-intro-copy, .about-bio, .about-credentials { min-width: 0; }
+
+/* Match the practice page's spacing and payment cards. */
+.provider-header .container { padding-top: 18px; padding-bottom: 18px; }
+.provider-main, .provider-footer { max-width: 1000px; }
+.provider-main { padding-top: 40px; }
+.provider-intro { grid-template-columns: 320px minmax(0, 1fr); gap: 36px; padding-bottom: 36px; }
+.provider-intro .carrie-portrait { width: 320px; box-shadow: var(--shadow-elevated); }
+.provider-intro h1 { margin-top: 14px; font-size: clamp(2.5rem, 5vw, 3.6rem); }
+.provider-intro .btn { margin-top: 22px; }
+.provider-section { padding: 28px 0; }
+.provider-section h2, .provider-booking h2 { font-size: 26px; margin-bottom: 16px; }
+.provider-section details { margin-top: 16px; padding-top: 14px; }
+.provider-facts { gap: 20px 32px; }
+.provider-facts > div { border-bottom: 1px solid var(--color-border-light); padding-bottom: 16px; }
+.provider-payment-grid { display: grid; gap: 20px; padding: 8px 0 24px; }
+.provider-payment-grid > .provider-section { border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); padding: 26px; }
+.provider-booking { margin: 0 0 32px; padding: 28px; }
+.provider-booking .btn { font-size: 15px; padding: 18px 22px; }
+@media (min-width: 768px) { .provider-payment-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } }
+@media (max-width: 767px) {
+    .provider-main { padding-top: 28px; }
+    .provider-intro { grid-template-columns: 1fr; gap: 24px; }
+    .provider-intro .carrie-portrait { width: 260px; justify-self: center; }
+    .provider-title { font-size: 21px; }
+    .provider-payment-grid > .provider-section, .provider-booking { padding: 24px; }
+}

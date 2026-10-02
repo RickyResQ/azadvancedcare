@@ -1,0 +1,25 @@
+{
+  "name": "azadvancedcare",
+  "account_id": "12f33d7f5a45b64faa5419860b1260c6",
+  "compatibility_date": "2026-10-02",
+  "workers_dev": true,
+  "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "azadvancedcare.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "persist": true
+    }
+  }
+}

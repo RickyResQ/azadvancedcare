@@ -11,7 +11,7 @@
     --color-hero: #EBE7DF;
     --color-text: #1C2B3A;
     --color-text-muted: #4F5E6F;
-    --color-accent: #3D7A5F;
+    --color-accent: #2E6349;
     --color-accent-hover: #2E6349;
     --color-accent-light: #E6F0EA;
     --color-accent-subtle: #F2F7F4;
@@ -727,6 +727,20 @@ h3 {
     background: linear-gradient(to right, var(--color-cta), var(--color-accent));
     margin: 28px 0;
     border-radius: 2px;
+}
+
+.hero-provider {
+    margin-top: 24px;
+    font-size: clamp(1.2rem, 2vw + 0.5rem, 1.6rem);
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.hero-provider-credentials {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--color-accent);
 }
 
 @media (min-width: 768px) {
@@ -1613,3 +1627,97 @@ h3 {
         background: none;
     }
 }
+
+/* Carrie portrait retains its original proportions and reserves loading space. */
+.carrie-portrait { display: block; width: 280px; max-width: 100%; height: auto; aspect-ratio: 1122 / 1402; border-radius: 20px; }
+.about-bio .carrie-portrait { width: 240px; margin-bottom: 28px; }
+
+/* Accessibility: focus, contrast, reflow and navigation targets. */
+:where(a, button, summary, input):focus-visible { outline: 3px solid var(--color-text); outline-offset: 4px; }
+#main:focus { outline: none; }
+.site-footer, .footer-credentials, .footer-links a { color: #CBD3D9; }
+.footer-links { flex-wrap: wrap; }
+.footer-links a, .provider-back, .provider-footer a { display: inline-block; min-height: 24px; }
+.form-shell > p { margin-top: 20px; }
+.faq-item summary::after { content: ""; width: 16px; height: 16px; border: 2px solid currentColor; border-top: 0; border-left: 0; transform: rotate(45deg); background: none; border-radius: 0; margin-right: 6px; }
+.faq-item[open] summary::after { content: ""; background: none; color: var(--color-text); transform: rotate(225deg); }
+@media (max-width: 767px) {
+    .site-header-wrapper { position: relative; }
+    .js .nav-menu { position: absolute; top: 100%; bottom: auto; max-height: 70vh; }
+    .header-inner, .provider-header .container { flex-wrap: wrap; }
+    .logo { overflow-wrap: anywhere; }
+    .contact-link { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) { .faq-item summary::after { transition: none; } }
+
+/* A consistent, compact rhythm for the practice and provider pages. */
+.section { padding: 56px 0; }
+.section-header { margin-bottom: 28px; }
+.section-intro { margin-top: 12px; max-width: 680px; }
+.hero { padding: 48px 0 60px; }
+.hero-layout { display: grid; gap: 32px; align-items: center; }
+.hero-layout > .carrie-portrait { width: 240px; box-shadow: var(--shadow-elevated); }
+.hero-rule { margin: 22px 0; }
+.hero-provider { margin-top: 18px; }
+.hero-actions { margin-top: 28px; }
+.hero::before { opacity: .35; }
+.conditions-grid { gap: 12px; }
+.condition-card { padding: 18px 20px; }
+.steps, .options-grid, .insurance-content { gap: 20px; }
+.step-content, .option-card, .insurance-card, .about-credentials { padding: 26px; }
+.step { padding: 0; border: 1px solid var(--color-border); overflow: hidden; }
+.step-content { border-radius: var(--radius-lg); }
+.about-content { gap: 28px; }
+.about-bio p { line-height: 1.75; }
+.payer-list { margin: 16px 0 0; }
+.payer-list:has(strong) { list-style: none; padding-left: 0; }
+.payer-list:has(strong) li { padding: 12px 0; border-bottom: 1px solid var(--color-border-light); }
+.payer-list:has(strong) li:last-child { border-bottom: 0; }
+.payer-list strong { color: var(--color-accent); white-space: nowrap; }
+.faq-list { max-width: 880px; }
+.faq-item summary { padding: 20px 0; }
+.site-footer { padding: 40px 0 28px; }
+.footer-main { padding-bottom: 24px; gap: 24px; }
+.footer-bottom { padding-top: 20px; }
+@media (min-width: 768px) {
+    .section { padding: 72px 0; }
+    .hero { padding: 56px 0 72px; }
+    .hero-layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; }
+    .hero-layout > .carrie-portrait { width: 300px; }
+    .conditions-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .about-content { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; }
+}
+@media (max-width: 767px) {
+    .hero-layout > .carrie-portrait { justify-self: center; }
+    .step-content, .option-card, .insurance-card, .about-credentials { padding: 24px; }
+}
+.hero-layout > .carrie-portrait { position: relative; z-index: 1; }
+.form-shell { padding: 26px; border: 1px solid var(--color-border); background: var(--color-warm); }
+.form-shell > p { margin-top: 16px; }
+.form-shell .btn-primary { background: var(--color-accent); }
+.form-shell .btn-primary:hover { background: var(--color-text); }
+/* Entrance effects never hide content or delay access to it. */
+.hero-content { animation: calm-arrival .35s ease-out both; }
+.reveal, .reveal.revealed { opacity: 1; transform: none; transition: none; }
+.reveal.revealed { animation: calm-arrival .3s ease-out both; }
+@keyframes calm-arrival { from { opacity: .96; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.condition-card:hover, .step:hover, .option-card:hover, .insurance-card:hover { transform: none; }
+@media (prefers-reduced-motion: reduce) {
+    .hero-content, .reveal.revealed { animation: none; }
+}
+
+/* Readable privacy documents with the same navigation and focus treatment. */
+.legal-header { background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+.legal-header .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; padding-bottom: 20px; }
+.legal-header .logo { max-width: 360px; }
+.legal-header a, .legal-footer a, .privacy-links a { display: inline-block; min-height: 24px; }
+.legal-document { max-width: 880px; padding-top: 40px; padding-bottom: 40px; overflow-wrap: anywhere; }
+.legal-document h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 24px; }
+.legal-document h2 { font-size: 26px; margin-top: 32px; margin-bottom: 12px; }
+.legal-document h3 { font-size: 21px; margin-top: 24px; margin-bottom: 12px; }
+.legal-document p, .legal-document ul { margin-top: 16px; }
+.legal-document ul { padding-left: 24px; }
+.legal-document li + li { margin-top: 12px; }
+.legal-footer { max-width: 880px; border-top: 1px solid var(--color-border); padding-top: 24px; padding-bottom: 32px; font-size: 14px; }
+.legal-footer nav, .privacy-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 16px; }
+.privacy-links { margin-top: 16px; }

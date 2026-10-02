@@ -1721,3 +1721,18 @@ h3 {
 .legal-footer { max-width: 880px; border-top: 1px solid var(--color-border); padding-top: 24px; padding-bottom: 32px; font-size: 14px; }
 .legal-footer nav, .privacy-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 16px; }
 .privacy-links { margin-top: 16px; }
+
+/* The symbol is decorative; the adjacent practice name names the home link. */
+.logo { display: inline-flex; align-items: center; gap: 10px; }
+.brand-symbol { display: block; width: 40px; height: 40px; flex: 0 0 40px; }
+.brand-name { min-width: 0; white-space: normal; }
+@media (min-width: 1024px) {
+    .site-header .logo { flex: 1 1 280px; }
+    .site-nav { flex-shrink: 0; }
+    .site-nav .nav-menu { flex-wrap: nowrap; }
+    .site-nav .nav-menu a { white-space: nowrap; }
+}
+@media (max-width: 767px) {
+    .brand-symbol { width: 36px; height: 36px; flex-basis: 36px; }
+    .logo { gap: 8px; max-width: 260px; }
+}

@@ -14,3 +14,5 @@
 images/*
 !images/carrie-bann-320.jpg
 !images/carrie-bann-640.jpg
+!images/practice-symbol.svg
+!favicon.svg

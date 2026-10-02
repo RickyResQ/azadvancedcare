@@ -15,11 +15,14 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "@type": [
+            "MedicalBusiness",
+            "LocalBusiness"
+        ],
         "name": "Arizona Advanced Psychiatric Care, LLC",
-        "url": "https://azadvancedcare.com",
+        "url": "https://azadvancedcare.com/",
         "description": "Arizona Advanced Psychiatric Care provides psychiatric evaluations and medication management for adults in Mesa, Arizona.",
-        "medicalSpecialty": "Psychiatric",
+        "medicalSpecialty": "https://schema.org/Psychiatric",
         "telephone": "+15205274190",
         "address": {
             "@type": "PostalAddress",
@@ -29,31 +32,38 @@
             "postalCode": "85205",
             "addressCountry": "US"
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "PLACEHOLDER_LAT",
-            "longitude": "PLACEHOLDER_LNG"
-        },
-        "priceRange": "$$",
-        "paymentAccepted": ["Insurance", "Cash", "Credit Card"],
+        "paymentAccepted": [
+            "Insurance",
+            "Self-pay"
+        ],
         "areaServed": {
             "@type": "State",
             "name": "Arizona"
         },
         "employee": {
             "@type": "Person",
+            "@id": "https://azadvancedcare.com/carrie#carrie-bann",
             "name": "Carrie Bann",
             "jobTitle": "Psychiatric-Mental Health Nurse Practitioner",
-            "qualifications": ["PMHNP-BC", "FNP-BC"]
+            "honorificSuffix": "PMHNP-BC, FNP-BC"
         },
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
             "opens": "08:00",
             "closes": "18:00"
-        }
+        },
+        "@id": "https://azadvancedcare.com/#practice"
     }
     </script>
+    <link rel="canonical" href="https://azadvancedcare.com/">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
